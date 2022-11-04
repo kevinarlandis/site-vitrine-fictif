@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+body{
+    font-family: 'lora','sans-serif';
+    background-color: #141414;
+    padding: 0;
+    margin: 0;
+    color: aliceblue;
+}
+
+.page{
+    margin:20px 80px;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #141414;
+    padding: 10px 0px;
+}
+
+nav .onglets{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;   
+}
+
+nav .onglets a{
+    text-decoration: none;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+nav .buttons button{
+    padding: 13px 20px;
+    color: antiquewhite;
+    border: none;
+    background-color:rgb(20, 66, 51);
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+nav .buttons .login{
+    background-color: inherit ;
+    margin-right: 10px;
+    color: #8f8f8f;
+}
+
+nav .buttons .register{
+    background-color: inherit ;
+    margin-right: 10px;
+    color: #8f8f8f;
+}
+button:hover{
+    animation: anim 1s alternate infinite;
+}
+@keyframes anim {
+    from{
+        color: #8f8f8f;
+    }
+    to{
+        color: aqua;
+    }
+    
+}
+
+/* header */
+
+header{
+    margin-top: 40px;
+    margin-left: 50px;
+    background:url('https://img.bfmtv.com/i/992/0/7f0e98/af9d6d9bfd725ec590a70a6ff3.jpeg') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1000px 1000px;
+}
+
+header h1{
+    text-align: center;
+    font-size: 50px;
+    padding: 200px;
+}
+
+/* pied de page */
+
+footer{
+    background-color: #1a1a1a;
+    padding: 25px 100px;
+    color: #828282;
+}
+
+footer .colonnes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 640px){
+    body .page{
+        margin: 10px;
+    }
+    nav .onglets{
+        display: none;
+    }
+    header{
+        margin-top: 20px;
+        background-size: 250px 250px;
+    }
+    header h1{
+        font-size: 30px;
+        padding: 100px;
+    }
+}
